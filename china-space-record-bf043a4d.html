@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 知识库索引 · 持续关注</title>
+    <style>
+        /* reset & base */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', sans-serif;
+            background: #fafaf9;
+            color: #1c1917;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* narrow reading width */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        /* headers */
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.25;
+            margin-bottom: 0.25rem;
+            border-left: 4px solid #1c1917;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2.5rem 0 0.75rem;
+            letter-spacing: -0.01em;
+            color: #292524;
+            border-bottom: 1px solid #e7e5e4;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.4rem;
+            color: #44403c;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #44403c;
+        }
+        a {
+            color: #1c1917;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #a8a29e;
+            transition: text-decoration-color 0.2s;
+        }
+        a:hover {
+            text-decoration-color: #1c1917;
+        }
+
+        /* directory / card style */
+        .dir-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.85rem;
+            margin: 1.2rem 0 2rem;
+        }
+        .dir-item {
+            background: #ffffff;
+            border: 1px solid #e7e5e4;
+            border-radius: 0;
+            padding: 1rem 1.2rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .dir-item:hover {
+            border-color: #a8a29e;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+        .dir-item .label {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #78716c;
+            border: 1px solid #d6d3d1;
+            padding: 0.1rem 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+        .dir-item .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+            color: #1c1917;
+        }
+        .dir-item .desc {
+            font-size: 0.9rem;
+            color: #57534e;
+            line-height: 1.5;
+        }
+        .dir-item .desc a {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        /* info box (note / reminder) */
+        .info-box {
+            background: #f5f5f4;
+            border-left: 4px solid #a8a29e;
+            padding: 1.2rem 1.4rem;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            border-radius: 0;
+        }
+        .info-box strong {
+            font-weight: 600;
+            color: #1c1917;
+        }
+
+        /* faq summary style */
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-item q {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.15rem;
+            color: #292524;
+        }
+        .faq-item p {
+            margin-left: 0.5rem;
+            font-size: 0.95rem;
+            color: #57534e;
+        }
+
+        /* small hint */
+        .footnote {
+            font-size: 0.85rem;
+            color: #78716c;
+            margin-top: 3.5rem;
+            border-top: 1px solid #e7e5e4;
+            padding-top: 1.2rem;
+        }
+
+        /* responsive */
+        @media (min-width: 600px) {
+            .dir-grid { grid-template-columns: 1fr 1fr; }
+            h1 { font-size: 2.4rem; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 1.8rem 1.2rem 3rem; }
+            h1 { font-size: 1.7rem; padding-left: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>爱游戏 · 知识库</h1>
+    <p style="color: #57534e; font-size: 0.95rem; margin-top: 0.2rem;">持续关注 · 再次访问 · 收藏索引</p>
+
+    <!-- 切入角度：再次访问、收藏和持续关注 -->
+    <p>
+        无论你是初次了解还是曾经到访，这个页面作为结构化的补充索引，帮助你快速定位与 <a href="https://china-space-ayx.com">爱游戏</a> 相关的常见信息区域。
+        建议将当前地址加入浏览器书签，以便后续直接浏览目录层级。站点内容会保持更新，重复访问时可通过本页把握整体脉络。
+    </p>
+
+    <!-- 目录感布局：卡片网格 -->
+    <h2>信息目录</h2>
+    <div class="dir-grid">
+        <div class="dir-item">
+            <span class="label">平台说明</span>
+            <div class="title">关于爱游戏</div>
+            <div class="desc">游戏信息聚合与导航服务。主要面向希望系统了解某一类型内容的用户。</div>
+        </div>
+        <div class="dir-item">
+            <span class="label">使用提示</span>
+            <div class="title">访问与收藏</div>
+            <div class="desc">推荐使用现代浏览器，并允许必要脚本。将主站加入书签可提升再次访问效率。</div>
+        </div>
+        <div class="dir-item">
+            <span class="label">内容分类</span>
+            <div class="title">常见主题</div>
+            <div class="desc">攻略、资讯、版本记录、社区讨论等。具体分类可参考站点内导航栏。</div>
+        </div>
+        <div class="dir-item">
+            <span class="label">持续关注</span>
+            <div class="title">动态与通知</div>
+            <div class="desc">不定期更新公告与内容调整。关注 <a href="https://china-space-ayx.com">爱游戏</a> 首页可获取最新信息。</div>
+        </div>
+    </div>
+
+    <!-- 说明区：再次访问场景 -->
+    <h2>再次访问 · 收藏说明</h2>
+    <p>
+        当你想回到 <a href="https://china-space-ayx.com">爱游戏</a> 但忘记具体路径时，本页可以作为间接入口。建议使用浏览器「添加到收藏夹」功能，
+        或将此页设置为常用标签。对于频繁查阅特定内容的用户，目录卡片提供了快速跳转的心理锚点。
+    </p>
+    <p>
+        如果希望减少重复检索成本，可以记住主站域名或将其固定在浏览器标签栏。长期关注者可以留意页面底部的更新记录区域。
+    </p>
+
+    <!-- 提示区 -->
+    <div class="info-box">
+        <strong>提示</strong><br>
+        再次访问时，请确认网络环境正常。部分外部链接可能因策略调整而变更，建议以 <a href="https://china-space-ayx.com">爱游戏</a> 首页公布的信息为准。
+        收藏夹内可同时保存本索引页与主站，互为补充。
+    </div>
+
+    <!-- 相关信息区：FAQ 摘要 -->
+    <h2>相关信息 · 常见疑问</h2>
+    <div class="faq-item">
+        <q>如何快速回到主站？</q>
+        <p>可以将 <a href="https://china-space-ayx.com">爱游戏</a> 添加至浏览器书签栏，或利用历史记录中频繁访问的站点入口。</p>
+    </div>
+    <div class="faq-item">
+        <q>本页与主站的关系是什么？</q>
+        <p>本页是独立的索引介绍页，不替代主站功能，仅用于提供结构化的说明与提示，方便新老用户了解背景。</p>
+    </div>
+    <div class="faq-item">
+        <q>内容多久更新一次？</q>
+        <p>主站内容按实际需要迭代；本页保持基础信息稳定，仅在必要时调整目录或提示细节。</p>
+    </div>
+
+    <!-- 额外说明区：节奏变化 -->
+    <h2>使用场景参考</h2>
+    <p>
+        如果你习惯在多个设备间切换，收藏夹同步功能可以让你在手机、平板、桌面都能快速找到 <a href="https://china-space-ayx.com">爱游戏</a>。
+        对于内容研究者，建议定期查看站点导航分类是否有新增模块。持续关注者还可以订阅可能存在的通知渠道（如有）。
+    </p>
+    <p>
+        本页不存储用户数据，也不设置跟踪脚本。所有链接均指向明确目的地，可放心使用。
+    </p>
+
+    <!-- 极简脚注 -->
+    <div class="footnote">
+        索引页 · 仅供结构参考 · 内容以主站实际展示为准<br>
+        建议收藏本页以便再次访问 · 保持简洁检索
+    </div>
+
+</div>
+</body>
+</html>
